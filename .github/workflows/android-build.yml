@@ -54,7 +54,7 @@ jobs:
           echo "EXPO_PUBLIC_SUPABASE_URL=$EXPO_PUBLIC_SUPABASE_URL" > .env
           echo "EXPO_PUBLIC_SUPABASE_ANON_KEY=$EXPO_PUBLIC_SUPABASE_ANON_KEY" >> .env
           
-          npx eas build --platform android --profile preview --local --non-interactive --output=ballr-app.apk
+          eas build --platform android --profile preview --local --non-interactive --output=ballr-app.apk
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
